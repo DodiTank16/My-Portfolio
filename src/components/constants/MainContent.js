@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import logo from "../../images/logo.png";
+import logo from "../../images/tringle-logo.png";
 
 function MainContent() {
 	return (
@@ -17,6 +17,7 @@ function MainContent() {
 							letterSpacing: ".3rem",
 							color: "white",
 							textDecoration: "none",
+							textAlign: "center",
 						}}>
 						CREATIVE DEVELOPER
 					</Typography>
@@ -30,6 +31,7 @@ function MainContent() {
 							letterSpacing: ".3rem",
 							color: "white",
 							textDecoration: "none",
+							textAlign: "center",
 						}}>
 						Sensible To Fullstack
 					</Typography>

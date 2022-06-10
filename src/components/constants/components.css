@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 *,
 ::after,
 ::before {
@@ -8,6 +10,7 @@
 body {
 	background-color: black;
 }
+
 .container {
 	width: 100%;
 	max-width: 1146px;
@@ -24,52 +27,104 @@ body {
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
 	backdrop-filter: blur(14px);
 	-webkit-backdrop-filter: blur(8.4px);
+	width: 100%;
 }
-/* .dtimage {
-	margin-top: 20px;
-	float: right;
-} */
+
 .header-btn {
 	justify-content: end;
 }
-/* Create two equal columns that floats next to each other */
-.column {
+
+.banner {
 	margin-top: 50px;
-	float: left;
-	width: 50%;
-	padding: 10px;
-	height: 300px; /* Should be removed. Only for demonstration */
-	color: antiquewhite;
+	height: auto;
 }
-
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .banner-content {
-	padding: 50px !important;
-	width: 50%;
-	padding: 10px;
+	color: white;
+	float: left;
+	margin-top: 10px;
+	/* background: Red; */
+	width: 70%;
+	padding: 50px 10px 50px 10px;
+	height: 280px;
+	font-family: "Caveat", cursive;
+	text-align: center;
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* .banner-image {
+	padding-left: 10px;
+	float: right;
+	margin-top: 8px;
+	width: 30%;
+	height: 280px;
+} */
+.content-one {
+	background: linear-gradient(
+		90deg,
+		rgba(19, 7, 71, 1) 27%,
+		rgba(117, 38, 87, 1) 52%,
+		rgba(19, 7, 71, 1) 81%
+	);
+}
+.banner-image img {
+	width: 260px;
+	height: 260px;
+}
+
+.box {
+	text-align: center;
+	position: relative;
+	background: #060c21;
+	padding: 10px;
+	float: right;
+	margin-top: 10px;
+	width: 30%;
+	height: 280px;
+}
+.box:before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1;
+}
+.box:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+	background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+
 @media screen and (max-width: 600px) {
-	.column {
-		width: 100%;
+	.container {
+		width: 424px;
 	}
 	.banner-content {
+		color: white;
 		width: 100%;
-		margin: auto;
+		padding: 50px 10px 50px 10px;
+		height: 280px;
 		text-align: center;
 	}
-	.banner-logo {
-		margin: auto;
-		width: 100%;
-		padding: 10px;
+	.content-one {
+		background: none;
 	}
-	.banner-logo img {
+	.banner-image {
+		text-align: center;
+		padding: 10px;
+		margin-top: 10px;
 		width: 100%;
+		align-items: center;
 	}
 }

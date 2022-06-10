@@ -1,12 +1,12 @@
 import "./App.css";
 import Header from "./components/constants/Header";
-import MainContent from "./components/constants/MainContent";
+import Banner from "./components/constants/Banner";
 
 function App() {
 	return (
 		<>
 			<Header />;
-			<MainContent />
+			<Banner />
 		</>
 	);
 }
