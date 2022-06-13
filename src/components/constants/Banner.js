@@ -1,8 +1,39 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import Typed from "typed.js";
 import logo from "../../images/tringle-logo.png";
 
 function MainContent() {
+	const el = React.useRef(null);
+	// Create reference to store the Typed instance itself
+	const typed = React.useRef(null);
+
+	React.useEffect(() => {
+		const options = {
+			strings: [
+				// "Some <i>strings</i> are slanted",
+				// "Some <strong>strings</strong> are bold",
+				"<strong>Developer</strong>",
+				"<strong>Designer</strong>",
+				"<strong>Music Producer</strong>",
+				"<strong>Disk Jockey</strong>",
+			],
+			typeSpeed: 100,
+			backSpeed: 100,
+			backDelay: 999,
+			loop: true,
+		};
+
+		// elRef refers to the <span> rendered below
+		typed.current = new Typed(el.current, options);
+
+		return () => {
+			// Make sure to destroy Typed instance during cleanup
+			// to prevent memory leaks
+			typed.current.destroy();
+		};
+	}, []);
+
 	return (
 		<>
 			<div className="container">
@@ -16,38 +47,48 @@ function MainContent() {
 								mr: 2,
 								paddingTop: 1.2,
 								fontFamily: "Eczar",
-								// background: `linear-gradient(90deg, rgba(19,7,71,1) 27%, rgba(117,38,87,1) 52%, rgba(19,7,71,1) 81%)`,
 								fontWeight: 400,
 								letterSpacing: ".2rem",
 								color: "white",
 								textDecoration: "none",
 								textAlign: "center",
 							}}>
-							CREATIVE DEVELOPER
+							Hi, i am Dodi,
 						</Typography>
+						{/* //! Method 1 */}
+						{/* <div className="type-wrap">
+							<h1>
+								A Creative <span style={{ whiteSpace: "pre" }} ref={el} />
+							</h1>
+						</div> */}
+						{/*//! Buttons to Control the TEXT Animation */}
+						{/* <button onClick={() => typed.current.toggle()}>Toggle</button>
+						<button onClick={() => typed.current.start()}>Start</button>
+						<button onClick={() => typed.current.stop()}>Stop</button>
+						<button onClick={() => typed.current.reset()}>Reset</button>
+						<button onClick={() => typed.current.destroy()}>Destroy</button> */}
+						{/* //! Method 2 */}
 						<Typography
 							variant="h3"
 							align="center"
 							sx={{
 								mr: 2,
-								fontFamily: "Lobster",
+								fontFamily: "Kdam Thmor Pro",
 								fontWeight: 400,
 								letterSpacing: ".3rem",
 								color: "white",
 								textDecoration: "none",
 								textAlign: "center",
 							}}>
-							Sensible To Fullstack
+							A creative <span style={{ whiteSpace: "pre" }} ref={el} />
+							{/* A Creative Devloper And Sensible To Fullstack */}
 						</Typography>
 					</div>
-					{/* <div className="banner-image">
-						<img src={logo} alt="" />
-					</div> */}
-				</div>
-				<div className="box banner-image">
-					{/* <div class="content"> */}
-					<img src={logo} alt="" />
-					{/* </div> */}
+					<div className="box ">
+						<div className="banner-image">
+							<img src={logo} alt="" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</>

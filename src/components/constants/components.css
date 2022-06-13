@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 *,
 ::after,
@@ -36,26 +36,20 @@ body {
 
 .banner {
 	margin-top: 50px;
-	height: auto;
+	text-align: center;
 }
 .banner-content {
 	color: white;
 	float: left;
 	margin-top: 10px;
-	/* background: Red; */
 	width: 70%;
 	padding: 50px 10px 50px 10px;
-	height: 280px;
-	font-family: "Caveat", cursive;
+	/* height: 280px; */
+	/* font-family: "Caveat", cursive; */
 	text-align: center;
+	padding: 82px;
 }
-/* .banner-image {
-	padding-left: 10px;
-	float: right;
-	margin-top: 8px;
-	width: 30%;
-	height: 280px;
-} */
+
 .content-one {
 	background: linear-gradient(
 		90deg,
@@ -66,7 +60,7 @@ body {
 }
 .banner-image img {
 	width: 260px;
-	height: 260px;
+	/* height: 260px; */
 }
 
 .box {
@@ -75,9 +69,9 @@ body {
 	background: #060c21;
 	padding: 10px;
 	float: right;
-	margin-top: 10px;
+	margin-top: 20px;
 	width: 30%;
-	height: 280px;
+	/* height: 280px; */
 }
 .box:before {
 	content: "";
@@ -106,25 +100,90 @@ body {
 	background: linear-gradient(235deg, #772aff, #010615, #2196f3);
 }
 
-@media screen and (max-width: 600px) {
+/* ------------------------Animation------------------------------ */
+.type-wrap {
+	font-family: "Kdam Thmor Pro", sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.3rem;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+/* ------------------------------------------------------ */
+@media screen and (max-width: 1199px) {
 	.container {
-		width: 424px;
+		width: 962px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 740px;
+	}
+	.banner-content {
+		color: white;
+		width: 70%;
+		padding: 10px;
+		text-align: center;
+		float: left;
+	}
+
+	.banner-image {
+		text-align: center;
+		width: 30%;
+		align-items: center;
+	}
+	.banner-image img {
+		text-align: center;
+		width: 200px;
+	}
+	.box {
+		float: right;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 570px;
 	}
 	.banner-content {
 		color: white;
 		width: 100%;
-		padding: 50px 10px 50px 10px;
-		height: 280px;
+		padding: 10px;
 		text-align: center;
-	}
-	.content-one {
-		background: none;
+		float: none;
 	}
 	.banner-image {
 		text-align: center;
-		padding: 10px;
-		margin-top: 10px;
+		margin: auto;
+	}
+	.banner-image img {
+		text-align: center;
+	}
+	.box {
+		float: none;
 		width: 100%;
-		align-items: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		width: 424px;
+	}
+	.banner-image {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 474px) {
+	.container {
+		width: 350px;
+	}
+	.banner-content {
+		background-color: blue;
+		width: 100%;
+	}
+	.content-one {
+		background: none;
 	}
 }
