@@ -74,7 +74,6 @@ function MainContent() {
 							sx={{
 								mr: 2,
 								fontFamily: "Kdam Thmor Pro",
-								fontWeight: 400,
 								letterSpacing: ".3rem",
 								color: "white",
 								textDecoration: "none",
