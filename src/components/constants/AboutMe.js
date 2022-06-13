@@ -9,7 +9,6 @@ function MainContent() {
 				<div>
 					<Typography
 						variant="h3"
-						// className="content-one"
 						align="left"
 						sx={{
 							mr: 2,
@@ -20,7 +19,7 @@ function MainContent() {
 							textDecoration: "none",
 							textAlign: "center",
 						}}>
-						Hi, i am Dodi,
+						About Me{" "}
 					</Typography>
 				</div>
 			</div>
