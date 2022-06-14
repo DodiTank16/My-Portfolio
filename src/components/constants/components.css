@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 ::after,
 ::before {
@@ -37,7 +38,7 @@ body {
 
 .banner {
 	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 }
 .banner-content {
 	color: white;
@@ -58,7 +59,6 @@ body {
 }
 .banner-image img {
 	width: 260px;
-	/* height: 260px; */
 }
 
 .box {
@@ -108,6 +108,67 @@ body {
 	text-align: center;
 }
 /* ------------------------------------------------------ */
+.section-two {
+	margin: 150px 10px 10px 10px;
+}
+.about-heading {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+}
+.title-section {
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	padding: 80px 0;
+}
+.title-section h1 span {
+	color: #2196f3;
+}
+.title-bg {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	letter-spacing: 10px;
+	line-height: 0.7;
+	font-size: 110px;
+	font-weight: 800;
+	color: hsla(0, 0%, 100%, 0.07);
+	text-transform: uppercase;
+	transform: translateY(-50%);
+}
+table {
+	font-family: "Poppins", sans-serif;
+	border-collapse: collapse;
+	/* float: left; */
+	width: 50%;
+	/* border-style: hidden; */
+}
+
+td,
+th {
+	border: 1px solid #fff;
+	text-align: left;
+	padding: 8px;
+}
+
+table,
+tr,
+td {
+	padding: 10px;
+	border: none;
+}
+table tr td h3 {
+	font-size: 26px;
+}
+.about-table {
+	float: left;
+}
+.cards {
+	clear: both;
+	width: 50%;
+}
 @media screen and (max-width: 1199px) {
 	.container {
 		width: 962px;
@@ -166,6 +227,9 @@ body {
 		float: none;
 		width: 100%;
 	}
+	.section-two {
+		margin: 10px 10px 10px 10px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -174,6 +238,15 @@ body {
 	}
 	.banner-image {
 		width: 100%;
+	}
+	.section-two {
+		margin: 10px 10px 10px 10px;
+	}
+	.about-heading h1 {
+		text-align: left;
+	}
+	.title-bg {
+		display: none;
 	}
 }
 @media screen and (max-width: 474px) {
