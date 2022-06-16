@@ -138,36 +138,35 @@ body {
 	text-transform: uppercase;
 	transform: translateY(-50%);
 }
-table {
-	font-family: "Poppins", sans-serif;
-	border-collapse: collapse;
-	/* float: left; */
+.aboutme {
+	flex: 0 0 auto;
+	width: 100%;
+}
+.table {
 	width: 50%;
-	/* border-style: hidden; */
 }
-
-td,
-th {
-	border: 1px solid #fff;
-	text-align: left;
-	padding: 8px;
+.table ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-bottom: 1rem;
 }
-
-table,
-tr,
-td {
-	padding: 10px;
-	border: none;
+.table ul li {
+	flex: 0 0 50%;
+	max-width: 50%;
 }
-table tr td h3 {
-	font-size: 26px;
+.table ul li.title {
+	font-weight: bold;
+	background: #333;
+	color: #fff;
 }
-.about-table {
-	float: left;
+.aboutinfo li:not(:last-child) {
+	padding-bottom: 20px;
+}
+.font {
+	font-weight: 600;
 }
 .cards {
-	clear: both;
-	width: 50%;
 }
 @media screen and (max-width: 1199px) {
 	.container {
@@ -202,6 +201,9 @@ table tr td h3 {
 	.box {
 		/* float: right; */
 		margin-top: 20px;
+	}
+	.d-block {
+		display: block;
 	}
 }
 

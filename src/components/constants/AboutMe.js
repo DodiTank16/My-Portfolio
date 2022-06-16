@@ -9,49 +9,41 @@ function MainContent() {
 						<h1>
 							ABOUT <span>ME</span>
 						</h1>
-						<span class="title-bg">Resume</span>
+						<span className="title-bg">Resume</span>
 					</div>
 					<div className="aboutme">
-						<div className="about-table">
-							<table border={1}>
-								<tr>
-									<td colSpan={2}>
-										<h3>PERSONAL INFOS</h3>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										First Name: <strong>Dodi</strong>
-									</td>
-									<td>
-										Last Name: <strong> Tank</strong>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Age: <strong>21 Years</strong>
-									</td>
-									<td>
-										Nationality: <strong>Indian</strong>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Address: <strong>Rajkot, Gujarat</strong>
-									</td>
-									<td>
-										Email: <strong>tankdodi@gmail.com</strong>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Skype: <strong>tank.dodi</strong>
-									</td>
-									<td>
-										Languages: <strong>English, Gujarati, Hindi</strong>
-									</td>
-								</tr>
-							</table>
+						<div className="table">
+							<ul className="aboutinfo">
+								<li>
+									First Name: <span className="d-block">Dodi</span>
+								</li>
+								<li>
+									Last Name: <span className="d-block"> Tank</span>
+								</li>
+
+								<li>
+									Age: <span className="d-block font">21 Years</span>
+								</li>
+								<li>
+									Nationality: <span className="d-block font">Indian</span>
+								</li>
+
+								<li>
+									Address: <span className="d-block font">Rajkot, Gujarat</span>
+								</li>
+								<li>
+									Email:{" "}
+									<span className="d-block font">tankdodi@gmail.com</span>
+								</li>
+
+								<li>
+									Skype: <span className="d-block font">tank.dodi</span>
+								</li>
+								<li>
+									Languages:{" "}
+									<span className="d-block font">English, Gujarati, Hindi</span>
+								</li>
+							</ul>
 						</div>
 						<div className="cards">Hello World</div>
 					</div>
