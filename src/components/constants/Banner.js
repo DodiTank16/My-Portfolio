@@ -53,7 +53,7 @@ function MainContent() {
 								textDecoration: "none",
 								textAlign: "center",
 							}}>
-							Hi, i am Dodi,
+							Hi, i am Dodi.
 						</Typography>
 						{/* //! Method 1 */}
 						{/* <div className="type-wrap">

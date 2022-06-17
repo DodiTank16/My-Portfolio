@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
 function MainContent() {
 	return (
@@ -13,6 +14,7 @@ function MainContent() {
 					</div>
 					<div className="aboutme">
 						<div className="table">
+							<div className="info-header">personal infos</div>
 							<ul className="aboutinfo">
 								<li>
 									First Name: <span className="d-block">Dodi</span>
@@ -44,8 +46,45 @@ function MainContent() {
 									<span className="d-block font">English, Gujarati, Hindi</span>
 								</li>
 							</ul>
+							<div className="downloadcv">
+								{/* <Link to="/">Home</Link> |{" "} */}
+							</div>
 						</div>
-						<div className="cards">Hello World</div>
+						<div className="cards">
+							<div className="row">
+								<div className="card">
+									<div className="box-stats with-margin">
+										<h3 className="box-no">6</h3>
+										<p className="box-content">
+											months of <span className="d-block">experience</span>
+										</p>
+									</div>
+								</div>
+								<div className="card">
+									<div className="box-stats with-margin">
+										<h3 className="box-no">5+</h3>
+										<p className="box-content">Projects done</p>
+									</div>
+								</div>
+								<div className="card">
+									<div className="box-stats with-margin">
+										<h3 className="box-no">12</h3>
+										<p className="box-content">
+											years of <span className="d-block">experience</span>
+										</p>
+									</div>
+								</div>
+								<div className="card">
+									<div className="box-stats with-margin">
+										<h3 className="box-no">12</h3>
+										<p className="box-content">
+											years of <span className="d-block">experience</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="clearfix"></div>
 					</div>
 				</div>
 			</div>
