@@ -54,15 +54,15 @@ function MainContent() {
 							<div className="row">
 								<div className="card">
 									<div className="box-stats with-margin">
-										<h3 className="box-no">6</h3>
+										<h3 className="box-no">1+</h3>
 										<p className="box-content">
-											months of <span className="d-block">experience</span>
+											years of <span className="d-block">experience</span>
 										</p>
 									</div>
 								</div>
 								<div className="card">
 									<div className="box-stats with-margin">
-										<h3 className="box-no">5+</h3>
+										<h3 className="box-no">2+</h3>
 										<p className="box-content">Projects done</p>
 									</div>
 								</div>

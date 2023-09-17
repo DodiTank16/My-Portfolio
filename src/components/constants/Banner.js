@@ -13,10 +13,10 @@ function MainContent() {
 			strings: [
 				// "Some <i>strings</i> are slanted",
 				// "Some <strong>strings</strong> are bold",
-				"<strong>Developer</strong>",
-				"<strong>Designer</strong>",
+				// "<strong>Developer</strong>",
+				// "<strong>Designer</strong>",
 				"<strong>Music Producer</strong>",
-				"<strong>Disk Jockey</strong>",
+				// "<strong>Disk Jockey</strong>",
 			],
 			typeSpeed: 100,
 			backSpeed: 100,
@@ -53,21 +53,9 @@ function MainContent() {
 								textDecoration: "none",
 								textAlign: "center",
 							}}>
-							Hi, i am Dodi.
+							Hi, I am Dodi.
 						</Typography>
-						{/* //! Method 1 */}
-						{/* <div className="type-wrap">
-							<h1>
-								A Creative <span style={{ whiteSpace: "pre" }} ref={el} />
-							</h1>
-						</div> */}
-						{/*//! Buttons to Control the TEXT Animation */}
-						{/* <button onClick={() => typed.current.toggle()}>Toggle</button>
-						<button onClick={() => typed.current.start()}>Start</button>
-						<button onClick={() => typed.current.stop()}>Stop</button>
-						<button onClick={() => typed.current.reset()}>Reset</button>
-						<button onClick={() => typed.current.destroy()}>Destroy</button> */}
-						{/* //! Method 2 */}
+						
 						<Typography
 							variant="h3"
 							align="center"
@@ -78,6 +66,7 @@ function MainContent() {
 								color: "white",
 								textDecoration: "none",
 								textAlign: "center",
+								wordBreak:"break-word",
 							}}>
 							A creative <span style={{ whiteSpace: "pre" }} ref={el} />
 							{/* A Creative Devloper And Sensible To Fullstack */}

@@ -37,6 +37,8 @@ body {
 }
 
 .banner {
+	position: relative;
+	min-height: 200px;
 	margin-top: 150px;
 	margin-bottom: 50px;
 }
@@ -179,10 +181,7 @@ body {
 .font {
 	font-weight: 600;
 }
-.cards {
-	flex: 0 0 auto;
-	width: 100%;
-}
+
 .row {
 	--bs-gutter-x: 1.5rem;
 	--bs-gutter-y: 0;
@@ -201,7 +200,7 @@ body {
 	width: 50%;
 }
 .aboutme .box-stats {
-	padding: 20px 30px 25px 40px;
+	padding: 20px;
 	border-radius: 5px;
 	border: 1px solid #252525;
 }
@@ -212,6 +211,7 @@ body {
 	position: relative;
 	display: inline-block;
 	margin: 0;
+    padding-left: 70px;
 	font-size: 50px;
 	font-weight: 700;
 }
@@ -221,7 +221,7 @@ body {
 	color: #2196f3;
 }
 .aboutme .box-stats p {
-	padding-left: 45px;
+    text-align: -webkit-center;
 }
 .box-content {
 	font-family: "Open Sans", sans-serif;
@@ -229,15 +229,7 @@ body {
 	margin: 0 !important;
 	position: relative !important;
 }
-.aboutme .box-stats p:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 13px;
-	width: 30px;
-	height: 1px;
-	background: #777;
-}
+
 .clearfix {
 	clear: both;
 }
@@ -247,6 +239,9 @@ body {
 	}
 	.d-block {
 		display: block;
+	}
+	.aboutme .box-stats h3 {
+		padding-left: 55px;
 	}
 }
 
@@ -278,11 +273,27 @@ body {
 		/* float: right; */
 		margin-top: 20px;
 	}
+	.section-two {
+		margin: 0px;
+	}
+	.title-section {
+		padding: 45px 0;
+	}
+	.aboutme{
+		text-align: center;
+	}
 	.table {
 		width: 100%;
 	}
 	.cards {
+		height: auto;
 		float: left;
+	}
+	.aboutme .box-stats p {
+		padding: 0px;
+	}
+	.aboutme .box-stats h3 {
+		padding-left: 0px;
 	}
 }
 
@@ -329,19 +340,10 @@ body {
 	.title-bg {
 		display: none;
 	}
-
 	.aboutme .box-stats p {
-		padding-left: 25px;
+		padding-left: 0x;
 	}
-	.aboutme .box-stats p:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 13px;
-		width: 10px;
-		height: 1px;
-		background: #777;
-	}
+	
 }
 @media screen and (max-width: 474px) {
 	.container {
@@ -349,8 +351,16 @@ body {
 	}
 	.banner-content {
 		width: 100%;
+		display: inline;
 	}
 	.content-one {
 		background: none;
+	}
+	.box {
+		float: none;
+		width: 95%;
+	}
+	.aboutme .box-stats p {
+		font-size: 12px;
 	}
 }
