@@ -13,8 +13,8 @@ function MainContent() {
 			strings: [
 				// "Some <i>strings</i> are slanted",
 				// "Some <strong>strings</strong> are bold",
-				// "<strong>Developer</strong>",
-				// "<strong>Designer</strong>",
+				"<strong>Developer</strong>",
+				"<strong>Designer</strong>",
 				"<strong>Music Producer</strong>",
 				// "<strong>Disk Jockey</strong>",
 			],
